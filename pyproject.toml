@@ -1,0 +1,19 @@
+[project]
+name = "spam-sms-email-classifier"
+version = "1.0.0"
+description = "AI-powered spam SMS and email classifier using TF-IDF and Logistic Regression."
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "joblib",
+    "fastapi",
+    "uvicorn",
+    "httpx2",
+]
+
+[tool.vercel]
+entrypoint = "backend.main:app"
